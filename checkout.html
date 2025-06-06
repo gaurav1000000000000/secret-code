@@ -1,0 +1,730 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+    <meta charset="utf-8">
+    <meta name="google-translate-customization" content="9f841e7780177523-3214ceb76f765f38-gc38c6fe6f9d06436-c">
+    </meta>
+
+    <title>Secret Coder : Online Courses</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/icon.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+   
+</head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Checkout for Day and Night Film Services">
+    <title>Checkout - Day and Night Film</title>
+    <link rel="icon" href="./img/core-img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .checkout-container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 40px;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            color: #222;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background: linear-gradient(90deg, #ff6f61, #2a2a72);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .checkout-details {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .checkout-details p {
+            font-size: 1.2em;
+            color: #555;
+            margin: 15px 0;
+            display: flex;
+            justify-content: space-between;
+            font-weight: 500;
+        }
+
+        .total {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: #007bff;
+            text-align: center;
+            margin: 20px 0;
+            padding: 15px;
+            background: #e9f1ff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 123, 255, 0.1);
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+
+        .payment-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 15px 0;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .gpay-btn {
+            background: #34c759;
+        }
+
+        .gpay-btn:hover {
+            background: #2ba84a;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(52, 199, 89, 0.4);
+        }
+
+        .phonepe-btn {
+            background: #ff2d55;
+        }
+
+        .phonepe-btn:hover {
+            background: #cc2444;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 45, 85, 0.4);
+        }
+
+        .card-btn {
+            background: #ff9500;
+        }
+
+        .card-btn:hover {
+            background: #e08500;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 149, 0, 0.4);
+        }
+
+        .back-btn {
+            background: #6c757d;
+        }
+
+        .back-btn:hover {
+            background: #5a6268;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(108, 117, 125, 0.4);
+        }
+
+        .error-message {
+            color: #dc3545;
+            font-size: 1em;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        /* Card Payment Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            position: relative;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .modal-content h3 {
+            margin-bottom: 20px;
+            color: #222;
+            font-size: 1.8em;
+            text-align: center;
+        }
+
+        .modal-content form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .modal-content label {
+            font-size: 1em;
+            color: #555;
+            font-weight: 500;
+        }
+
+        .modal-content input {
+            padding: 12px;
+            font-size: 1em;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .modal-content input:focus {
+            border-color: #007bff;
+        }
+
+        .modal-content .input-group {
+            display: flex;
+            gap: 15px;
+        }
+
+        .modal-content .input-group input {
+            flex: 1;
+        }
+
+        .modal-content button[type="submit"] {
+            padding: 15px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .modal-content button[type="submit"]:hover {
+            background: #0056b3;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 1.5em;
+            color: #555;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .close-btn:hover {
+            color: #dc3545;
+        }
+
+        /* Footer Styles (Copied from services.html) */
+        .professional-footer {
+            background: linear-gradient(180deg, #0f1419 0%, #1c2526 100%);
+            color: #ffffff;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            padding: 60px 0 0;
+            border-top: 2px solid #2a2a2a;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1.5fr;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto 40px;
+            padding: 0 15px;
+        }
+
+        .footer-section {
+            position: relative;
+        }
+
+        .footer-logo {
+            font-size: 26px;
+            font-weight: 700;
+            margin: 0 0 10px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #ffffff;
+        }
+
+        .footer-slogan {
+            font-size: 14px;
+            font-weight: 300;
+            color: #a0a0a0;
+            margin: 0 0 20px;
+        }
+
+        .footer-contact {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #a0a0a0;
+        }
+
+        .footer-contact p {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-icon {
+            width: 20px;
+            margin-right: 10px;
+            color: #c0c0c0;
+        }
+
+        .footer-contact a {
+            color: #c0c0c0;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-contact a:hover {
+            color: #ffffff;
+        }
+
+        .footer-heading {
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #ffffff;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: #a0a0a0;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #ffffff;
+        }
+
+        .footer-about-text {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #a0a0a0;
+            margin: 0;
+        }
+
+        .footer-legal-bar {
+            border-top: 1px solid #2a2a2a;
+            padding: 20px 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-copyright {
+            font-size: 12px;
+            color: #808080;
+            margin: 0;
+        }
+
+        .footer-legal-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-legal-links a {
+            color: #c0c0c0;
+            text-decoration: none;
+            font-size: 12px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-legal-links a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .footer-content { grid-template-columns: 1fr; gap: 30px; }
+            .footer-legal-bar { flex-direction: column; gap: 10px; text-align: center; }
+            .checkout-container { margin: 20px; padding: 20px; }
+            .checkout-details p { font-size: 1em; }
+            .total { font-size: 1.3em; }
+            .payment-btn { font-size: 1em; }
+            .modal-content { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <p class="m-0 fw-bold" style="font-size: 25px;"><img src="img/icon.png" alt="" height="50px">Secret<span
+                    style="color: #fb873f;">Coder</span></p>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="courses.html" class="nav-item nav-link">Courses</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="team.html" class="dropdown-item">Our Team</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="login.html" class="nav-item nav-link"><i class="fa fa-user"></i></a>
+                <a href="#" class="nav-item nav-link">
+
+                <div id="google_translate_element">
+                </div>
+
+
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Header -->
+    <!-- <header class="header-area">
+        <div class="main-header-area">
+            <div class="classy-nav-container breakpoint-off">
+                <nav class="classy-navbar justify-content-between" id="uzaNav">
+                    <a class="nav-brand logo-text" href="index.html">Day and Night Film</a>
+                    <style>
+                        .nav-brand.logo-text {
+                            font-family: 'Montserrat', sans-serif;
+                            font-size: 28px;
+                            font-weight: 700;
+                            color: #ffffff;
+                            text-transform: uppercase;
+                            letter-spacing: 2px;
+                            text-decoration: none;
+                            padding: 10px 20px;
+                            background: linear-gradient(90deg, #ff6f61, #2a2a72);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            transition: all 0.3s ease;
+                        }
+                        .nav-brand.logo-text:hover {
+                            transform: scale(1.05);
+                            opacity: 0.9;
+                        }
+                    </style>
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+                    <div class="classy-menu">
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+                        <div class="classynav">
+                            <ul id="nav">
+                                <li><a href="./index.html">Home</a></li>
+                                <li class="current-item"><a href="courses.html">Services</a></li>
+                                <li><a href="./about.html">About</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
+                            </ul>
+                            <div class="get-a-quote ml-4 mr-3">
+                                <a href="quote.html" class="btn uza-btn">Get A Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+<br>
+<br> -->
+    <!-- Checkout Content -->
+    <div class="checkout-container">
+        <h2>Secure Checkout</h2>
+        <div class="checkout-details">
+            <p><strong>Courses:</strong> <span id="serviceName"></span></p>
+            <p><strong>Price:</strong> <span id="servicePrice"></span></p>
+        </div>
+        <div class="total" id="totalAmount"></div>
+        <button class="payment-btn gpay-btn" onclick="payWithGPay()">Pay with Google Pay</button>
+        <button class="payment-btn phonepe-btn" onclick="payWithPhonePe()">Pay with PhonePe</button>
+        <button class="payment-btn card-btn" onclick="openCardModal()">Pay with Card</button>
+        <br>
+        <br>
+        <button class="payment-btn back-btn" onclick="goBack()">Back to Courses</button>
+    </div>
+
+    <!-- Card Payment Modal -->
+    <div id="cardModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeCardModal()"></span>
+            <h3>Enter Card Details</h3>
+            <form id="cardPaymentForm" onsubmit="handleCardPayment(event)">
+                <div>
+                    <label for="cardNumber">Card Number</label>
+                    <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19" required>
+                </div>
+                <div class="input-group">
+                    <div>
+                        <label for="expiryDate">Expiry Date</label>
+                        <input type="text" id="expiryDate" placeholder="MM/YY" maxlength="5" required>
+                    </div>
+                    <div>
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" placeholder="123" maxlength="4" required>
+                    </div>
+                </div>
+                <div>
+                    <label for="cardHolder">Cardholder Name</label>
+                    <input type="text" id="cardHolder" placeholder="John Doe" required>
+                </div>
+                <button type="submit">Pay Now</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer (Updated with Rupees) -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-white mb-3">Quick Link</h4>
+                    <p><a class="text-light" href="about.html">About Us</a></p>
+                    <p><a class="text-light" href="contact.html">Contact Us</a></p>
+                    <p><a class="text-light" href="">Privacy Policy</a></p>
+                    <p><a class="text-light" href="">Terms & Condition</a></p>
+                    <p><a class="text-light" href="">FAQs & Help</a></p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, Bangalore, Karnataka</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 8683045908</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>secretcoder@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-white mb-3">Subscribe to our Newsletter</h4>
+                    <p>Subscribe now and join our growing community of learners committed to lifelong education! </p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <form action="#">
+                            <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="email"
+                                placeholder="Your email" required>
+                            <button type="submit"
+                                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"><a
+                                    href="mailto:keertidvcorai@gmail.com">Subscribe</a></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="index.html">Secret Coder</a>, All Right Reserved.
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Fetch query parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const service = urlParams.get('courses') || 'Unknown Service';
+        const price = parseFloat(urlParams.get('price')) || 0;
+        const currency = 'INR'; // Hardcoded to INR
+        const defaultUpiId = "omkarnathdubey127-2@okhdfcbank";
+        
+
+        // Display service details
+        document.getElementById('serviceName').textContent = service;
+        document.getElementById('servicePrice').textContent = `₹ ${price.toFixed(2)}`;
+        document.getElementById('totalAmount').textContent = `Total: ₹ ${price.toFixed(2)}`;
+
+        // Payment functions
+        function payWithGPay() {
+            const upiUrl = `upi://pay?pa=${defaultUpiId}&pn=Omkar%20Nath&am=${price}&cu=${currency}&tn=Payment%20for%20${encodeURIComponent(service)}`;
+            window.location.href = upiUrl;
+
+            setTimeout(() => {
+                if (document.hasFocus()) {
+                    alert('No UPI app found to handle this payment. Please use a mobile device or contact support.');
+                }
+            }, 2000);
+        }
+
+        function payWithPhonePe() {
+            const phonepeUrl = `upi://pay?pa=${defaultUpiId}&pn=Omkar%20Nath&am=${price}&cu=${currency}&tn=Payment%20for%20${encodeURIComponent(service)}`;
+            window.location.href = phonepeUrl;
+
+            setTimeout(() => {
+                if (document.hasFocus()) {
+                    alert('No UPI app found to handle this payment. Please use a mobile device or contact support.');
+                }
+            }, 2000);
+        }
+
+        // Card Payment Modal Functions
+        const cardModal = document.getElementById('cardModal');
+        function openCardModal() {
+            cardModal.style.display = 'flex';
+        }
+
+        function closeCardModal() {
+            cardModal.style.display = 'none';
+            document.getElementById('cardPaymentForm').reset();
+        }
+
+        function handleCardPayment(event) {
+            event.preventDefault();
+            const cardNumber = document.getElementById('cardNumber').value;
+            const expiryDate = document.getElementById('expiryDate').value;
+            const cvv = document.getElementById('cvv').value;
+            const cardHolder = document.getElementById('cardHolder').value;
+
+            // Basic client-side validation
+            if (!cardNumber.match(/^\d{4}\s?\d{4}\s?\d{4}\s?\d{4}$/)) {
+                alert("Please enter a valid card number (16 digits)");
+                return;
+            }
+            if (!expiryDate.match(/^(0[1-9]|1[0-2])\/\d{2}$/)) {
+                alert("Please enter a valid expiry date (MM/YY)");
+                return;
+            }
+            if (!cvv.match(/^\d{3,4}$/)) {
+                alert("Please enter a valid CVV (3 or 4 digits)");
+                return;
+            }
+            if (!cardHolder.trim()) {
+                alert("Please enter the cardholder's name");
+                return;
+            }
+
+            // Simulate payment processing (replace with real payment gateway integration)
+            setTimeout(() => {
+                alert(`Payment Successful!\nCard Number: ${cardNumber}\nAmount: ₹ ${price.toFixed(2)}\nService: ${service}`);
+                closeCardModal();
+                // Optionally redirect to a success page
+                // window.location.href = 'payment-success.html';
+            }, 1000);
+        }
+
+        // Format card number input (e.g., 1234 5678 9012 3456)
+        document.getElementById('cardNumber').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            value = value.replace(/(\d{4})/g, '$1 ').trim();
+            e.target.value = value;
+        });
+
+        // Format expiry date input (e.g., MM/YY)
+        document.getElementById('expiryDate').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length >= 2) {
+                value = value.substring(0, 2) + '/' + value.substring(2);
+            }
+            e.target.value = value.substring(0, 5);
+        });
+
+        function goBack() {
+            window.location.href = 'services.html';
+        }
+    </script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/uza.bundle.js"></script>
+    <script src="js/default-assets/active.js"></script>
+</body>
+</html>
